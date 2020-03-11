@@ -112,13 +112,13 @@ p > a:hover {
     font-size: 30px;
 }
 
-.nav-item.nav-link a,
-.nav-item.nav-link a:after {
+.navbar-nav li a,
+.navbar-nav li a:after {
     text-decoration: none;
     transition: all .5s;
 }
 
-.nav-item.nav-link a {
+.navbar-nav li a {
     color: #fff;
     display: block;
     padding: 10px;
@@ -126,11 +126,11 @@ p > a:hover {
     position: relative;
 }
 
-.nav-item.nav-link a:hover {
+.navbar-nav li a:hover {
     color: #D3D3D3;
 }
 
-.nav-item.nav-link a:after {
+.navbar-nav li a:after {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -143,11 +143,11 @@ p > a:hover {
     height: 2px;
 }
 
-.nav-item.nav-link a:hover:after {
+.navbar-nav li a:hover:after {
     width: 100%;
 }
 
-.nav-item.nav-link:last-of-type {
+.navbar-nav li:last-of-type {
     margin-right: 20px;
 }
 
@@ -211,6 +211,15 @@ p > a:hover {
   border: none;
 }
 
+.post-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+}
+
+.post-image {
+    margin: 30px 0px;
+}
+
 footer {
     background: #000;
     color: #fff;
@@ -233,6 +242,7 @@ footer a:hover {
 
 footer .logo {
     max-width: 300px;
+    margin: 0px auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -245,7 +255,7 @@ footer .logo {
         padding: 0px 20px
     }
     
-    .nav-item.nav-link:last-of-type {
+    .navbar-nav li:last-of-type {
     margin-right: 0px;
 }
 }
